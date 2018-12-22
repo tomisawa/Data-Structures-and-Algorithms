@@ -59,7 +59,7 @@ int Algorithm2_8() {
   return 1;
 }
 
-int SeartHashTable(int data) {
+int SearchHashTable(int data) {
   int hashValue = hash(data);
   stimes = 1;
 
@@ -109,7 +109,7 @@ void PrintHashTable() {
 void PrintHashTableStat() {
   printf("\nHashTableStat\n");
   for (int i = 0; i < N_HASHTABLE; i++) {
-    if (htable[i].stat == EMPTY)
+    if (htable[i]t.stat == EMPTY)
       printf("E");
     if (htable[i].stat == USE)
       printf("-");
@@ -143,7 +143,7 @@ int main() {
     PrintHashTable();
     printf("Search  Data:");
     scanf("%d", &data);
-    if ((index=SeartHashTable(data)) < 0)
+    if ((index=SearchHashTable(data)) < 0)
       printf("Not Found\n");
     else
       printf("Found index=%d\n",index);
